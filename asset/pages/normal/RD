@@ -1,0 +1,17 @@
+folder setting 
+opz_jpg
+opz_png
+unopz_png
+unopz_jpg
+
+8000x2827
+jpg to webp
+
+https://github.com/webmproject/WebPShop
+
+Installation
+
+Download the binary at https://github.com/webmproject/WebPShop/releases.
+Direct link for Windows x64: https://github.com/webmproject/WebPShop/releases/download/v0.4.3/WebPShop_0_4_3_Win_x64.8bi
+Direct link for MacOS (extract the ZIP archive afterwise): https://github.com/webmproject/WebPShop/releases/download/v0.4.2/WebPShop_0_4_2_Mac_Universal.zip
+Move the plug-in (the .8bi binary for Windows or the .plugin folder for MacOS) to the Photoshop plug-in directory (C:\Program Files\Common Files\Adobe\Plug-Ins\CC for Windows, /Library/Application Support/Adobe/Plug-Ins/CC for Mac). Run Photoshop.

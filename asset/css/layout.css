@@ -1,0 +1,260 @@
+/*568x276 iPhone Se นอน*/
+@media only screen and (min-width: 568px) and (max-width: 568px) and (orientation: landscape) {
+    .container{
+        width: 568px !important;
+        height: calc(var(--vh, 1vh) * 100);
+        
+    }
+
+}
+/*569x243*/
+@media only screen and (min-width: 569px) and (max-width: 569px) and (orientation: landscape) {
+    .container{
+        width: 569px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
+/*595x248*/
+@media only screen and (min-width: 593px) and (max-width: 595px) and (orientation: landscape) {
+    .container{
+        width: 595px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
+
+/*667x309 นอน*/
+@media only screen and (min-width: 667px) and (max-width: 667px) and (orientation: landscape) {
+    .container{
+        width: 667px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
+/*667x331 นอน*/
+@media only screen and (min-width: 667px) and (max-width: 667px) and (orientation: landscape) {
+    .container{
+        width: 667px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
+
+/*702x284 นอน*/
+@media only screen and (min-width: 702px) and (max-width: 702px) and (orientation: landscape) {
+    .container{
+        width: 702px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
+
+/*724x310 นอน*/
+@media only screen and (min-width: 724px) and (max-width: 724px) and (orientation: landscape) {
+    .container{
+        width: 724px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
+/*726x252*/
+@media only screen and (min-width: 726px) and (max-width: 726px) and (orientation: landscape) {
+    .container{
+        width: 726px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
+/*736x364 นอน ลูกค้า1 นอน*/
+@media only screen and (min-width: 736px) and (max-width: 736px) and (orientation: landscape) {
+    .container{
+        width: 736px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
+/*789x412 note10 นอน*/
+@media only screen and (min-width: 788px) and (max-width: 789px) and (orientation: landscape) {
+    .container{
+        width: 789px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
+/*808x414 iPhone11XR นอน*/
+@media only screen and (min-width: 808px) and (max-width: 808px) and (orientation: landscape) {
+    .container{
+        width: 808px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
+/*812x375 นอน*/
+@media only screen and (min-width: 812px) and (max-width: 812px) and (orientation: landscape) {
+    .container{
+        width: 812px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
+/*832x363 iPhone12 นอน*/
+@media only screen and (min-width: 832px) and (max-width: 832px) and (orientation: landscape) {
+    .container{
+        width: 832px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
+/*846x414 note8 นอน*/
+@media only screen and (min-width: 845px) and (max-width: 846px) and (orientation: landscape) {
+    .container{
+        width: 846px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
+/*896x414 iPhone10/11 นอน*/
+@media only screen and (min-width: 896px) and (max-width: 896px) and (orientation: landscape) {
+    .container{
+        width: 896px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
+/*iPhone13*/
+@media only screen and (min-width: 749px) and (max-width: 750px) and (orientation: landscape) {
+    .container{
+        width: 750px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
+
+
+
+/*320x492*/
+@media only screen and (min-width: 318px) and (max-width: 320px) and (orientation: portrait) {
+    .container{
+        width: 320px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
+/*320x507*/
+@media only screen and (min-width: 318px) and (max-width: 320px) and (orientation: portrait) {
+    .container{
+        width: 320px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
+/*339x663*/
+@media only screen and (min-width: 337px) and (max-width: 339px) and (orientation: portrait) {
+    .container{
+        width: 339px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
+/*360x654*/
+@media only screen and (min-width: 358px) and (max-width: 360px) and (orientation: portrait) {
+    .container{
+        width: 360px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
+/*360x620 จอเก่งตั้ง*/
+@media only screen and (min-width: 358px) and (max-width: 360px) and (orientation: portrait) {
+    .container{
+        width: 360px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
+/*375x537*/
+@media only screen and (min-width: 373px) and (max-width: 375px) and (orientation: portrait) {
+    .container{
+        width: 375px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
+/*375x603 iPhoneSE*/
+@media only screen and (min-width: 373px) and (max-width: 375px) and (orientation: portrait) {
+    .container{
+        width: 375px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
+/*375x812 iPhoneX iPhone11*/
+@media only screen and (min-width: 373px) and (max-width: 375px) and (orientation: portrait) {
+    .container{
+        width: 375px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
+/*iPhone6 iPhone7*/
+@media only screen and (min-width: 375px) and (max-width: 376px) and (orientation: portrait) {
+    .container{
+        width: 375px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
+/*iPhone13*/
+@media only screen and (min-width: 389px) and (max-width: 390px) and (orientation: portrait) {
+    .container{
+        width: 390px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
+
+/*412x789 Note8*/
+/*@media only screen and (min-width: 412px) and (max-width: 414px) and (orientation: portrait) {
+    .container{
+        width: 414px !important;
+        height: 846px !important;
+    }
+
+}*/
+/*414x622 ลูกค้า1 ตั้ง*/
+@media only screen and (min-width: 414px) and (max-width: 414px) and (orientation: portrait) {
+    .container{
+        width: 414px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
+
+/*412x789 Note10*/
+@media only screen and (min-width: 410px) and (max-width: 412px) and (orientation: portrait) {
+    .container{
+        width: 412px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
+
+
+
+/*iPhone12*/
+@media only screen and (min-width: 426px) and (max-width: 428px) and (orientation: portrait) {
+    .container{
+        width: 428px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
+.mainImgPixelated img{
+	-ms-interpolation-mode: nearest-neighbor;   /* IE8+ */
+	image-rendering: -webkit-optimize-contrast; /* Safari (WebKit) */
+	image-rendering: -moz-crisp-edges;          /* Firefox (Gecko) */
+	image-rendering: -o-crisp-edges;            /* Opera 12.x */
+	image-rendering: pixelated;                 /* Chrome 41+, Opera 29+ (CSS4) */
+}
+

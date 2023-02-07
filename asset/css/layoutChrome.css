@@ -1,0 +1,17 @@
+/*832x363 iPhone12 นอน Chrome*/
+@media only screen and (min-width: 832px) and (max-width: 832px) and (orientation: landscape) {
+    .container{
+        width: 832px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
+
+/*iPhone12 ตั้ง Chrome*/
+@media only screen and (min-width: 426px) and (max-width: 428px) and (orientation: portrait) {
+    .container{
+        width: 428px !important;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
