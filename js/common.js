@@ -17,6 +17,7 @@ $(document).ready(function () {
         infinite: true,
         dots: true,
         arrows: true,
+        autoplay: true,
         nextArrow:
             '<div class="slick-arrow slick-arrow--right icon-angle-right"></div>',
         prevArrow:
@@ -126,71 +127,89 @@ $(document).ready(function () {
         ],
     });
 
-    function copyToClipboard(string) {
-        let textarea;
-        let result;
-
-        try {
-            textarea = document.createElement("textarea");
-            textarea.setAttribute("readonly", true);
-            textarea.setAttribute("contenteditable", true);
-            textarea.style.position = "fixed"; // prevent scroll from jumping to the bottom when focus is set.
-            textarea.value = string;
-
-            document.body.appendChild(textarea);
-
-            textarea.focus();
-            textarea.select();
-
-            const range = document.createRange();
-            range.selectNodeContents(textarea);
-
-            const sel = window.getSelection();
-            sel.removeAllRanges();
-            sel.addRange(range);
-
-            textarea.setSelectionRange(0, textarea.value.length);
-            result = document.execCommand("copy");
-        } catch (err) {
-            console.error(err);
-            result = null;
-        } finally {
-            document.body.removeChild(textarea);
-        }
-
-        if (!result) {
-            const isMac = navigator.platform.toUpperCase().indexOf("MAC") >= 0;
-            const copyHotkey = isMac ? "⌘C" : "CTRL+C";
-            result = prompt(`Press ${copyHotkey}`, string); // eslint-disable-line no-alert
-            if (!result) {
-                return false;
-            }
-        }
-        return true;
-    }
-
     $(".js-copy-link").on("click", function (e) {
         e.preventDefault();
         var getLink = $(this).text();
         copyToClipboard(getLink);
     });
+
+    $(".b-about-block__wrapper--team .b-card").on("click", function (e) {
+        e.preventDefault();
+
+        if (
+            $(this).find(".b-popup").is(".b-popup--open") &&
+            e.target &&
+            !e.target.closest(".b-popup__content")
+        ) {
+            closeModal();
+        } else {
+            $("body").addClass("is-scroll-disabled");
+            $(this).find(".b-popup").addClass("b-popup--open");
+        }
+    });
+
+    $(".js-close-popup").on("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        closeModal();
+    });
+
+    $(".b-about-nav__link").on("click", function (e) {
+        e.preventDefault();
+
+        $("html, body").animate(
+            {
+                scrollTop: $($(this).attr("href")).offset().top,
+            },
+            1000
+        );
+    });
 });
 
-// let popup = document.querySelector('.b-popup'),
-//     modalOpen = document.querySelector('.js-header-menu');
+function closeModal() {
+    $("body").removeClass("is-scroll-disabled");
+    $(".b-popup").removeClass("b-popup--open");
+}
 
-// modalOpen.addEventListener('click', ()=> {
-//     popup.classList.add('b-popup--open');
-//     document.body.style.overflow = 'hidden';
-// })
+function copyToClipboard(string) {
+    let textarea;
+    let result;
 
-// function closeModal() {
-//     popup.classList.remove('b-popup--open');
-//     document.body.style.overflow = '';
-// }
+    try {
+        textarea = document.createElement("textarea");
+        textarea.setAttribute("readonly", true);
+        textarea.setAttribute("contenteditable", true);
+        textarea.style.position = "fixed"; // prevent scroll from jumping to the bottom when focus is set.
+        textarea.value = string;
 
-// popup.addEventListener('click', (e)=> {
-//     if (e.target === popup) {
-//         closeModal();
-//     }
-// });
+        document.body.appendChild(textarea);
+
+        textarea.focus();
+        textarea.select();
+
+        const range = document.createRange();
+        range.selectNodeContents(textarea);
+
+        const sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(range);
+
+        textarea.setSelectionRange(0, textarea.value.length);
+        result = document.execCommand("copy");
+    } catch (err) {
+        console.error(err);
+        result = null;
+    } finally {
+        document.body.removeChild(textarea);
+    }
+
+    if (!result) {
+        const isMac = navigator.platform.toUpperCase().indexOf("MAC") >= 0;
+        const copyHotkey = isMac ? "⌘C" : "CTRL+C";
+        result = prompt(`Press ${copyHotkey}`, string); // eslint-disable-line no-alert
+        if (!result) {
+            return false;
+        }
+    }
+    return true;
+}
